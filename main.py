@@ -11,11 +11,14 @@
 
 
 def fibonacci (x) :
-  #
-  # Fill in your code below
-
-  return 1
-
+  if n<0: 
+        print("Incorrect input") 
+        elif n==1: 
+        return 0
+    elif n==2: 
+        return 1
+    else: 
+        return Fibonacci(n-1)+Fibonacci(n-2) 
 
 # 
 # Test your code there
@@ -44,9 +47,8 @@ for x in fibtest :
 
 def join_digits (x) :
 
-  joinstring = ""
-  #
-  # Fill in your code below
+  joinstring = "number"
+
 
   return joinstring
 
@@ -71,7 +73,11 @@ for x in test :
 #duplicates("helicopter") ➞ 1
 #duplicates("birthday") ➞ 0
 # If there are no duplicates, return 0
+def duplic(x)
+x* 5  # ==> 3
+total=3
 
+return total
 # 
 # Task 4
 #
@@ -83,4 +89,13 @@ for x in test :
 #primorial(1) ➞ 2
 #primorial(2) ➞ 6
 #primorial(8) ➞ 9699690
+
+def primorial(n):
+    return reduce(primelist[n], 1)
+ 
+if n== 'prim':
+    print('First ten primorals:', [primorial(n) for n in range(10)])
+    for e in range(7):
+        n = 10**e
+        print('primorial(%i) has %i digits' % (n, len(str(primorial(n)))))
 
